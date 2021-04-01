@@ -4,7 +4,7 @@ import { CogIcon } from "../../../components/Svg";
 import IconButton from "../../../components/Button/IconButton";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { PanelProps, PushedProps } from "../types";
-import CakePrice from "./CakePrice";
+import PSIPrice from "./PSIPrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
@@ -37,12 +37,12 @@ const SocialEntry = styled.div`
 const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
-  toggleTheme,
-  isDark,
-  cakePriceUsd,
-  currentLang,
-  langs,
-  setLang,
+  // toggleTheme,
+  // isDark,
+  psiPriceUsd,
+  // currentLang,
+  // langs,
+  // setLang,
 }) => {
   if (!isPushed) {
     return (
@@ -57,13 +57,13 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        <CakePrice cakePriceUsd={cakePriceUsd} />
+        <PSIPrice psiPriceUsd={psiPriceUsd} />
         <SocialLinks />
       </SocialEntry>
-      <SettingsEntry>
+      {/* <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
         <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
-      </SettingsEntry>
+      </SettingsEntry> */}
     </Container>
   );
 };

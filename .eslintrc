@@ -1,5 +1,5 @@
 {
-  "extends": "@pancakeswap-libs/eslint-config-pancake",
+  "extends": "@passive-income/eslint-config-dpex",
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",

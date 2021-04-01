@@ -23,12 +23,12 @@ const useProps = () => {
     account: "0xbdda50183d817c3289f895a4472eb475967dc980",
     login: noop,
     logout: noop,
-    isDark: false,
+    isDark: true,
     toggleTheme: noop,
     langs,
     setLang: noop,
     currentLang: "EN",
-    cakePriceUsd: 0.023158668932877668,
+    psiPriceUsd: 0.023158668932877668,
     links,
     profile: null,
   });
@@ -39,12 +39,12 @@ const useProps = () => {
         account: "0xbdda50183d817c3289f895a4472eb475967dc980",
         login: noop,
         logout: noop,
-        isDark: false,
+        isDark: true,
         toggleTheme: noop,
         langs,
         setLang: noop,
         currentLang: "EN",
-        cakePriceUsd: 0.023158668932877668,
+        psiPriceUsd: 0.023158668932877668,
         links,
         profile: null,
       });
@@ -123,12 +123,12 @@ export const WithNoProfile: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        psiPriceUsd={0.23158668932877668}
         links={links}
         profile={{
           profileLink: "/profile",
@@ -165,12 +165,12 @@ export const WithProfile: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        psiPriceUsd={0.23158668932877668}
         links={links}
         profile={{
           username: "pancakeswap",
@@ -219,12 +219,12 @@ export const WithSubmenuSelected: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        psiPriceUsd={0.23158668932877668}
         links={links}
         profile={{
           username: "pancakeswap",

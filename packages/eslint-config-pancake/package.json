@@ -1,12 +1,12 @@
 {
-  "name": "@pancakeswap-libs/eslint-config-pancake",
+  "name": "@passive-income/eslint-config-dpex",
   "version": "1.0.1",
   "description": "Eslint config for PancakeSwap",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/eslint-config-pancake",
+  "repository": "https://github.com/PSI-Passive-Income/DPEX-toolkit/tree/master/packages/eslint-config-pancake",
   "license": "MIT",
   "author": "RabbitDoge",
   "private": false,
