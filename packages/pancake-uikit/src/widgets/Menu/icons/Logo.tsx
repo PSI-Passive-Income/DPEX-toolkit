@@ -14,7 +14,7 @@ const LogoText = styled.h3`
 const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   const textColor = isDark ? "#FFFFFF" : "#000000";
   return (
-    <LogoText style={{color: textColor}}>PSI DPex</LogoText>
+    <LogoText style={{color: textColor}}>PSI Dex</LogoText>
   );
 };
 
