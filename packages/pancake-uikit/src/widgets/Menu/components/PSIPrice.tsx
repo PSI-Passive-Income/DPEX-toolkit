@@ -23,7 +23,7 @@ const PriceLink = styled.a`
 
 const PSIPrice: React.FC<Props> = ({ psiPriceUsd }) => {
   return psiPriceUsd ? (
-    <PriceLink href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+    <PriceLink href="https://www.coingecko.com/nl/coins/passive-income" target="_blank">
       <PancakeRoundIcon width="24px" mr="8px" />
       <Text color="textSubtle" bold>{`$${psiPriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
