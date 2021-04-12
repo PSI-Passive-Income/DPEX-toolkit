@@ -3,6 +3,7 @@ import styled from "styled-components";
 import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
+import Text from "../../components/Text/Text";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./components/Logo";
 import Panel from "./components/Panel";
@@ -59,6 +60,10 @@ const MobileOnlyOverlay = styled(Overlay)`
   ${({ theme }) => theme.mediaQueries.nav} {
     display: none;
   }
+`;
+
+const Beta = styled(Text)`
+  margin: 3px 20px;
 `;
 
 const Menu: React.FC<NavProps> = ({
@@ -123,6 +128,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+          <Beta color="secondary" textTransform="uppercase">[BETA]</Beta>
           <UserBlock account={account} login={login} logout={logout} />
           {/* {profile && <Avatar profile={profile} />} */}
         </Flex>
