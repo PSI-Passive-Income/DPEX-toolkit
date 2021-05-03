@@ -29,6 +29,7 @@ const useProps = () => {
     setLang: noop,
     currentLang: "EN",
     psiPriceUsd: 502.03158668932877668,
+    incomePriceUsd: 1.103535,
     links,
     profile: null,
   });
@@ -45,6 +46,7 @@ const useProps = () => {
         setLang: noop,
         currentLang: "EN",
         psiPriceUsd: 502.03158668932877668,
+        incomePriceUsd: 1.103535,
         links,
         profile: null,
       });
@@ -129,6 +131,7 @@ export const WithNoProfile: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         psiPriceUsd={502.03158668932877668}
+        incomePriceUsd={1.103535}
         links={links}
         profile={{
           profileLink: "/profile",
@@ -171,6 +174,7 @@ export const WithProfile: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         psiPriceUsd={502.03158668932877668}
+        incomePriceUsd={1.103535}
         links={links}
         profile={{
           username: "pancakeswap",
@@ -225,6 +229,7 @@ export const WithSubmenuSelected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         psiPriceUsd={502.03158668932877668}
+        incomePriceUsd={1.103535}
         links={links}
         profile={{
           username: "pancakeswap",

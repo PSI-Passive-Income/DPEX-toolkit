@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { PSIRoundIcon } from "../../../components/Svg";
+import { IncomeRoundIcon } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
 interface Props {
-  psiPriceUsd?: number;
+  incomePriceUsd?: number;
 }
 
 const PriceLink = styled.a`
@@ -21,11 +21,11 @@ const PriceLink = styled.a`
   }
 `;
 
-const PSIPrice: React.FC<Props> = ({ psiPriceUsd }) => {
-  return psiPriceUsd ? (
-    <PriceLink href="https://www.coingecko.com/nl/coins/passive-income" target="_blank">
-      <PSIRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${psiPriceUsd.toFixed(3)}`}</Text>
+const PSIPrice: React.FC<Props> = ({ incomePriceUsd }) => {
+  return incomePriceUsd ? (
+    <PriceLink href="#" target="_blank">
+      <IncomeRoundIcon width="24px" mr="8px" />
+      <Text color="textSubtle" bold>{`$${incomePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

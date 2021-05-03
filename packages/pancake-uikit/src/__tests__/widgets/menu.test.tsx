@@ -35,7 +35,8 @@ it("renders correctly", () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        psiPriceUsd={0.23158668932877668}
+        psiPriceUsd={502.03158668932877668}
+        incomePriceUsd={1.103535}
         links={menuConfig}
       >
         body

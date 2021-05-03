@@ -5,6 +5,7 @@ import IconButton from "../../../components/Button/IconButton";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { PanelProps, PushedProps } from "../types";
 import PSIPrice from "./PSIPrice";
+import IncomePrice from "./IncomePrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
@@ -40,6 +41,7 @@ const PanelFooter: React.FC<Props> = ({
   // toggleTheme,
   // isDark,
   psiPriceUsd,
+  incomePriceUsd,
   // currentLang,
   // langs,
   // setLang,
@@ -60,6 +62,9 @@ const PanelFooter: React.FC<Props> = ({
         <PSIPrice psiPriceUsd={psiPriceUsd} />
         <SocialLinks />
       </SocialEntry>
+      {typeof(incomePriceUsd) !== "undefined" && incomePriceUsd !== null 
+        ? <SocialEntry><IncomePrice incomePriceUsd={incomePriceUsd} /></SocialEntry>
+        : null}
       {/* <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
         <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
