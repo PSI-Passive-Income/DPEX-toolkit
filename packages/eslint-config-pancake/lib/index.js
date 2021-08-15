@@ -11,21 +11,14 @@ module.exports = {
     es6: true,
     browser: true,
   },
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".ts", ".jsx", ".tsx"],
-      },
-    },
-    "import/extensions": [".js", ".ts", ".jsx", ".tsx"],
-  },
   extends: [
     "airbnb",
     "airbnb/hooks",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
+    "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
   ],
   rules: {
     // Typescript
