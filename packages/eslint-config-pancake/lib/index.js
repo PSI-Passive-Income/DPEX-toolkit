@@ -11,6 +11,14 @@ module.exports = {
     es6: true,
     browser: true,
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".ts", ".jsx", ".tsx", ".d.ts"],
+      },
+    },
+    "import/extensions": [".js", ".ts", ".jsx", ".tsx", ".d.ts"],
+  },
   extends: [
     "airbnb",
     "airbnb/hooks",
