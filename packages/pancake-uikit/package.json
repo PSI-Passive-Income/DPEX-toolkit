@@ -1,6 +1,6 @@
 {
   "name": "@passive-income/dpex-uikit",
-  "version": "0.17.9",
+  "version": "0.17.10",
   "description": "Set of UI components for DPEX projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
